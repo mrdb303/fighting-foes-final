@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Building a fighting game brief</title>
+	<link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="style/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="clear"></div>
+	<div id="wrapper">
+		<div id="center">
+		<header>
+			<h1>Formidable Fighting Foes Brief</h1>
+		</header>
+
+		<div id="output">
+			<div class="instruct">
+				<section>
+					<p>The challenge brief was spread over three months.</p><br/><br/>
+					<h2>Building a fighting game (Part 1) - March 2020</h2>
+					<p>In this challenge you will be setting up the game environment
+					You can mix PHP, JavaScript, HTML and CSS.
+					Frameworks are allowed however bonus points if you don't use frameworks</p>
+					<br/><br/>
+					<h2>Level 1 - Build a table</h2>
+
+					<p>Build a semantically correct HTML table with the following headers:</p>
+
+					<ul>
+						<li>Name</li>
+						<li>Type</li>
+						<li>Strength</li>
+						<li>Health</li>
+						<li>Special Power</li>
+						<li>Action</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 2</h2>
+					<p>Populate the table with 100 creatures at random with different health and strength points</p>
+					<br/>
+
+					<p>There must be 4 types of creatures. These are:</p>
+					<ul>
+						<li>Witches</li>
+						<li>Dragons</li>
+						<li>Snakes</li>
+						<li>River trolls</li>
+					</ul>
+					<br/><br/>
+
+					<p>The following health and strength rules must apply:</p>
+					<br/>
+					<p><strong>Witches</strong></p>
+					<ul>
+						<li>Strength between 60 - 80</li>
+						<li>Health between 50 - 60</li>
+					</ul>
+					<br/>
+					<p><strong>Dragons</strong></p>
+					<ul>
+						<li>Strength between 80 - 90</li>
+						<li>Health between 80 - 90</li>
+					</ul>
+					<br/>
+					<p><strong>Snakes</strong></p>
+					<ul>
+						<li>Strength between 30 - 60</li>
+						<li>Health between 30 - 90</li>
+					</ul>
+					<br/>
+					<p><strong>River Trolls</strong></p>
+					<ul>
+						<li>Strength between 22 - 65</li>
+						<li>Health between 60 - 92</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 3</h2>
+					<ul>
+						<li>Each row should have a different background colour</li>
+						<li>Each type should have a different image</li>
+						<li>Add 3 buttons to the actions column these should be</li>
+						<ul>
+							<li>Delete</li>
+							<li>Increase health</li>
+							<li>Decrease health</li>
+						</ul>
+						<li>Each button should display an alert that shows the type of action pressed</li>
+						<li>Use an emoji for each of the buttons instead of text. </li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 4</h2>
+					<ul>
+						<li>Create a button above the table with the value of 'Roll The Dice' </li>
+						<ul>
+							<li>This should display an alert with the message 'About to fight'</li>
+						</ul>
+						<li>Create a button above the table with the value of 'Reset'</li>
+						<ul>
+							<li>This should refresh the table.</li>
+						</ul>
+					</ul>
+					<br/><br/>
+
+					<h2>Level master</h2>
+					<ul>
+						<li>Don't use any frameworks!</li>
+					</ul>
+					<br/><br/>
+					<p>We will be using this setup for April&#39;s challenge.  So make it look good! :)</p><br/>
+					<br/>
+					<a href="https://codechallenges.howtocodewell.net/2020/march">https://codechallenges.howtocodewell.net/2020/march</a><br/>
+					<br/>
+					<hr>
+				</section>
+
+				<section>
+					<h2>Roll the dice and start to play (Part 2) - April 2020</h2>
+					<br/>
+					<p>In this challenge you will be adding some of functionality to the game
+					You can mix PHP, JavaScript, HTML and CSS.
+					Frameworks are allowed however bonus points if you don't use frameworks</p>
+					<br/><br/>
+
+					<h2>Level 1 - Delete the rows</h2>
+					<ul>
+						<li>Upon clicking the delete button the row should be removed. This should remove the character from the game</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 2 - Increase HP</h2>
+					<ul>
+						<li>Upon clicking the 'Increase health' button increase the creatures health by one point</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 3 - Decrease HP</h2>
+					<ul>
+						<li>Upon clicking the 'Decrease health' button decrease the creatures health by one</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 4 - Roll those dice</h2>
+					<ul>
+						<li>When clicking the 'Roll Dice Button' generate two random numbers between 1 and 6</li>
+						<li>Display both of the numbers in alert/modal</li>
+						<li>When a double is rolled display 'Special Powers Activated' in the alert/modal</li>
+						<li>Store the dice rolls and record if the special powers are activated in a object that can be accessed in the next challenge</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 5 - Display Special Powers</h2>
+					<ul>
+						<li>Create 6 special powers</li>
+						<ul>
+							<li>Double 1 = Increases health to 100</li>
+							<li>Double 2 = Decreases opponents health by 100</li>
+							<li>Double 3 = Increases strength between 1 - 100</li>
+							<li>Double 4 = Decreases strength between 1 - 100</li>
+							<li>Double 5 = Hides (Skips a go)</li>
+							<li>Double 6 = Steals 50% of the strength from the opponent </li>
+						</ul>
+						<li>When rolling a double display which special powers are active</li>
+						<li>When rolling a double all the special powers before are also active.</li>
+					</ul>
+					<br/>
+
+					<p><strong>Examples</strong></p>
+					<br/>
+					<p>Rolling a double 3 will activate the following:</p>
+					<ul>
+						<li>Increases strength between 1 - 100</li>
+						<li>Decreases opponents heath by 100</li>
+						<li>Increases health to 100</li>
+					</ul>
+					<br/>
+
+					<p>Rolling a double 5 will activate the following:</p>
+					<ul>
+						<li>Hides (Skips a go)</li>
+						<li>Decreases strength between 1 - 100</li>
+						<li>Increases strength between 1 - 100</li>
+						<li>Decreases opponents heath by 100</li>
+						<li>Increases health to 100</li>
+					</ul>
+					<br/>
+
+					<p>Rolling a double 6 will activate all the special powers</p>
+					<p>Don't do anything with these powers yet.  This will come together in the next challenge.</p>
+					<br/><br/>
+
+					<h2>Level master</h2>
+					<ul>
+						<li>Don't use any frameworks!</li>
+					</ul>
+					<br/>
+					<p>We will be using this setup for May&#39;s challenge.  So make it look good! :)</p><br/>
+					<br/>
+					<a href="https://codechallenges.howtocodewell.net/2020/april">https://codechallenges.howtocodewell.net/2020/april</a><br/>
+					<br/>
+					<hr>
+				</section>
+
+				<section>
+					<h2>Building a fighting game (Part 3) - May 2020</h2>
+					<p>In this challenge you will be starting the fight, processing the special powers and displaying the winner.</p>
+					<p>You can mix PHP, JavaScript, HTML and CSS.</p>
+					<p>Frameworks are allowed however bonus points if you don't use frameworks</p><br/>
+					<p><em>Please note that there is no health or strength cap however if the health is 0 the player should be removed from the game.</em></p>
+					<br/><br/>
+
+					<h2>Level 1 - Pair up</h2>
+					<ul>
+						<li>Randomly pair fighters together</li>
+						<li>A creature can only have one opponent per fight.</li>
+						<li>Create a column which holds the opponents name.</li>
+						<ul>
+							<li>There will be fighters who do not have an opponent due to an odd number of fighters</li>
+						</ul>
+						<li>If there is an odd number please ensure that the special powers are still processed</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 2 - Distribute the special powers</h2>
+					<ul>
+						<li>Randomly distribute the special powers across the creatures</li>
+						<li>Only one special power is allowed per creature</li>
+						<li>Display the special power in the 'Special Power' column</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 3 - Process the special powers</h2>
+					<ul>
+						<li>Adjust the HP, strength and remove creatures from the brawl where necessary</li>
+						<li>Once the opponents have been paired randomly select which opponent uses their special power first</li>
+						<li>Remove players who have a health of zero.</li>
+					</ul>
+					<br/><br/>
+
+					<p><strong>Example 1</strong></p><br/>
+					<p>A double 2 was rolled</p><br/>
+
+					<p>Opponent A starts with a health of 200</p>
+					<p>Opponent B starts with a health of 250</p>
+					<ul>
+						<li>Opponent A = Increases health by 100</li>
+						<li>Opponent B =  Decreases their opponents health by 100</li>
+					</ul>
+					<br/>
+					<p><strong>Result</strong></p>
+					<ul>
+						<li>Opponent A having no change to health. It would still be 200</li>
+					</ul>
+					<br/><br/>
+
+					<p><strong>Example 2</strong></p><br/>
+					<p>A double 5 was rolled</p><br/>
+					<ul>
+						<li>Opponent A = Decreases their strength between 1 - 100</li>
+						<li>Opponent B =  Hides (Skips a go)</li>
+					</ul>
+					<br/>
+					<p><strong>Result</strong></p>
+					<ul>
+						<li>Opponent A would have a reduction of health between 1 - 100</li>
+						<li>The fight would not happen because opponent B is hidden</li>
+					</ul>
+					<br/><br/>
+
+					<p><strong>Example 3</strong></p><br/>
+					<p>A double 6 was rolled</p><br/>
+					<ul>
+						<li>Opponent A = Steals 50% of the strength from opponent B</li>
+						<li>Opponent B = Increases their strength between 1 - 100</li>
+					</ul>
+					<br/>
+					<p><strong>Result</strong></p>
+					<ul>
+						<li>Opponent B would gain an increase of strength between 1 - 100</li>
+						<li>Opponent A would gain 50% of the Opponent B's health</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 4 - Fight!</h2>
+					<ul>
+						<li>After the special powers have been processed randomly decided which opponent will strike first</li>
+						<li>Subtract the sum of the strength plus the dice roll from the opponents health</li>
+						<li>If the opponents health has been reduced to zero then remove that opponent from the game</li>
+						<li>Repeat for the second opponent</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level 5 - Display the winner!</h2>
+					<ul>
+						<li>Keep rolling the dice until you get a winner</li>
+						<li>Show that winner in the modal/alert</li>
+					</ul>
+					<br/><br/>
+
+					<h2>Level master</h2>
+					<ul>
+						<li>Don't use any frameworks!</li>
+					</ul>
+					<br/>
+					<a href="https://codechallenges.howtocodewell.net/2020/may">https://codechallenges.howtocodewell.net/2020/may</a><br/>
+					<br/>
+					<hr>
+				</section>
+
+				<section>
+
+					<h2>Additional queries</h2>
+					<p>There are two scenarios where a special power could be issued and not used, which are:</p>
+					<ul>
+						<li>A creature is given a special power and is also deemed to be the odd numbered creature and is exempted from that round</li>
+						<li>The creature is given a special power, but the opponent goes first and plays the special power of 'Hide'</li>
+					</ul>
+					<br/>
+					<p>A) Yep that's correct. If the player doesn't have an opponent then skip that players go and skip that players powers.</p>
+					<br/><br/>
+					<p>Consider the following scenario:</p><br/>
+
+					<p>Opponent A Strength 50 Health 20<br/>
+					Vs.<br/>
+					Opponent B Strength 60 Health 30</p><br/>
+
+					<p>Dice thrown 5 + 3</p>
+					<p>Therefore no special powers are applied</p><br/>
+
+					<p>Opponent A strikes first</p>
+					<p>Opponent B takes a hit of (Opponent A's strength 50 + dice roll total 8)</p>
+					<p>Therefore Opponent B loses a health score of 58 (50 + 8)</p><br/>
+					<p>Opponent B started the round with only 30 health points, so is eliminated.</p><br/>
+
+					<p>At this stage, Opponent B has not struck Opponent A to cause any damage.</p>
+					<p>Will this mean that as there has been no strike, Opponent A will not lose health in that round?.</p><br/>
+
+					<p>A) Yes, that is correct.</p>
+
+					<br/><br/>
+					<hr>
+				</section>
+
+				<section>
+					<h2>Additional functionality added outside of the challenge brief</h2>
+	
+					<p><strong>Game Mechanics</strong></p>
+					<ul>
+						<li>Randomly generated unique names for each creature type, loaded from JSON file</li>
+						<li>Functionality in the script for changing the number of creatures generated</li>
+						<li>Randomised winner message from a list held in a JSON file</li>
+						<li>Functionality in the script for testing purposes to force double dice throws</li>
+						<li>An additional step named &#39;Process Power&#39; was added, so that the effect of the special 
+							powers could be displayed before the fight takes place</li>
+					</ul>
+					<br/>
+					<p><strong>Information</strong></p>
+					<ul>
+						<li>List created in alphabetical order of the creatures eliminated in the last round</li>
+						<li>Extra data is shown underneath the character table to show powers being used and who strikes first</li>
+						<li>When powers are processed, there is a summary of the stats created from the powers effect</li>
+						<li>Added instructions including some of the game artwork</li>
+						<li>When the battle is over, a list of powers that have been used by the winning creature are displayed</li>
+						<li>Also displayed at the end of the battle, is a list of creatures defeated by the winner in order of elimination</li>
+					</ul>
+					<br/>
+					<p><strong>UI Improvements</strong></p>
+					<ul>
+						<li>When an action button to increase or decrease health is clicked, the changed number value is animated and digits momentarily increase in size</li>
+						<li>A count of creatures still in the game is displayed on the page</li>
+						<li>When a creature is deleted either manually or automatically, the corresponding table row briefly highlights in red before deletion</li>
+						<li>Hovering the mouse pointer over a creature image displays the name of the creature type</li>
+						<li>Action buttons are greyed out and disabled when the battle is over</li>
+						<li>The main action button is removed on completion of the game, so that the user can only press the reset button</li>
+					</ul>
+					<br/>
+					<p><strong>Artwork</strong></p>
+					<ul>
+						<li>All images designed and created by hand</li>
+						<li>Dice throw values represented by dice images</li>
+						<li>Images created to indicate when double dice are thrown</li>
+						<li>Additional artwork for a trophy and a first place medal</li>
+						<li>Artwork is created in PNG format with a transparent background, which makes changing the page colour design easier</li>
+					</ul>
+				</section>
+			</div>
+
+			<footer><p>Code Challenge for March, April and May 2020 
+			on <a href="https://howtocodewell.net">HowToCodeWell.net</a></p>
+			</footer>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</body>
+</html>

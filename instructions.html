@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Build a fighting game</title>
+	<link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="style/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="clear"></div>
+	<div id="wrapper">
+		<div id="center">
+		<header>
+			<h1>Formidable Fighting Foes</h1>
+		</header>
+
+			
+		<div id="output">
+			<div class="instruct">
+				<section>
+				
+					<h2>Game overview</h2>
+			
+					<p>100 creatures are paired up and are fighting. Creatures can be 
+					eliminated within these battles if their health score reaches zero. 
+					Remaining creatures continue with the pairing up and fighting process 
+					until only one creature remains. The remaining creature is deemed the winner.</p><br/>
+					<p>There are four creature types: witches, dragons, snakes and river 
+					trolls.</p><br/>
+			
+					<p>Each creature is generated at random using the following strength 
+					and health ranges:</p><br/><br/>
+			
+					<p><strong>Witches</strong></p>
+					<img class="char" src="images/witch.png" alt="Witch image" />
+					
+					<ul>
+						<li>Strength between 60 - 80</li>
+						<li>Health between 50 - 60</li>
+					</ul>
+
+					<br/><br/>
+					<p><strong>Dragons</strong></p>
+					<img class="char" src="images/dragon.png" alt="Dragon image" />
+
+					<ul>
+						<li>Strength between 80 - 90</li>
+						<li>Health between 80 - 90</li>
+					</ul>
+			
+					<br/><br/>
+					<p><strong>Snakes</strong></p>
+					<img class="char" src="images/snake.png" alt="Snake image" />
+
+					<ul>
+						<li>Strength between 30 - 60</li>
+						<li>Health between 30 - 90</li>
+					</ul>
+
+					<br/><br/>
+					<p><strong>River Trolls</strong></p>
+					<img class="char" src="images/troll.png" alt="River Troll image" />
+			
+					<ul>
+						<li>Strength between 22 - 65</li>
+						<li>Health between 60 - 92</li>
+					</ul>
+
+				</section>
+			</div>
+
+			<div class="instruct">
+				<section>
+					<h2>Instructions</h2>
+			
+					<p>The game is controlled at random by rolling a pair of dice, by 
+					clicking on the &#39;Roll the Dice&#39; button.</p><br/>
+					<img class="mode" src="images/roll_dice.png" alt="Roll the Dice image" />
+			
+				</section>
+			
+				<section>
+					<h2>Stage 1 - Roll Dice mode</h2>
+			
+					<p>Once the dice has been rolled, the table will update to show 
+					opponents and stats. Underneath the table will be the respective 
+					matchups.</p><br/>
+					<p>If there are no doubles rolled, then the code will jump past the 
+					next stage direct to stage 3 - fight mode.</p>
+				</section>
+			
+				<section>
+					<h2>Stage 2 - Process Power mode</h2>
+			
+					<p>If there are doubles rolled, then the game will apply at random the powers 
+					issued. The table will also show the powers generated for the respective creature.
+					Where the matchups are shown underneath the table, the powers will also be 
+					displayed there too.</p><br/>
+			
+					<p>Pressing the &#39;Process Power&#39; button will apply the powers to the 
+					creature table and amend the creature stats accordingly.</p><br/> 
+
+					<img class="mode" src="images/process_power.png" alt="Process Power image" />
+					
+					<br/><br/><p>Underneath the table you will see the actual power stats that have been 
+					applied. For example, a power could be &#39;Increases strength between 1 - 100&#39;. 
+					In this circumstance the summary will show the actual strength value 
+					applied (i.e. 56 if that is the random value generated).</p><br/>
+			
+					<p>Also shown is the calculated value of the health points that will be lost 
+					if the fight completes. Note that there are cases which will mean that the 
+					opponent will not lose additional health points, such as:</p><br/>
+			
+					<ul>
+						<li>Creature skips a go through gaining the &#39;Hide/Skip a go&#39; power</li>
+						<li>Creature has been eliminated due to the result of special powers being applied</li>
+						<li>Creature being defeated before it gets an attack (i.e. if its health is at zero 
+						from the first strike of its opponent, when it is second in line to attack)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Stage 3 - Fight mode</h2>
+			
+					<p>Pressing the &#39;Fight&#39; button will initiate the battle between 
+					paired up creatures.</p><br/>
+					<img class="mode" src="images/fight.png" alt="Fight button image" /><br/>
+					<br/><p>The battle commences in the correct fighting order. The creature 
+					going first performs the first strike and health points are lost by 
+					the opponent. To calculate health points lost, add the 
+					creature&#39;s strength who is attacking to the sum of the dice. If 
+					the opponent is left with health points greater than zero, then the 
+					opponent will strike and cause the first fighter to lose health 
+					points. If a creature is reduced to zero health points, then it is 
+					eliminated.</p><br/>
+			
+					<p>When the stage is over, the page will update the main table and 
+					list the creatures that were eliminated in that round.</p><br/>
+			
+					<p>If one creature remains, then the battle is over and the trophy 
+					and medal are displayed. At this stage you can press the reset 
+					button to restart the game.</p><br/>
+					<p>If more than one creature remains, then the game continues with 
+					the remaining creatures and goes back to stage one for the next 
+					fighting round.</p> 
+				</section>
+			</div>
+			
+			<div class="instruct">
+				<section>
+					<h2>Additional Information</h2>
+			
+					<p>A special power only lasts for one fighting round.</p><br/>
+			
+					<p>If there are an odd number of creatures, then a creature will be 
+					picked at random to not participate in the round of fighting. If 
+					this creature has been granted a special power, then it will not be 
+					processed.</p><br>
+			
+					<p>The action buttons are available for creature modification 
+					throughout the duration of the game(delete creature/add health/remove health).</p><br/> 
+					<img src="images/action_buttons.png" alt="Action buttons image" 
+					height="50px" width="123px"/><br/>
+					<br/><p>Once the winner is announced the action buttons for 
+					creature modification will become greyed out. Clicking the action 
+					buttons at this stage will have no effect.</p><br/>
+					<img src="images/action_buttons_grey.png" alt="Action buttons grey image" 
+					height="50px" width="123px"/><br/><br/>
+					<p>The game is reset by clicking the reset button 
+					or reloading the page.</p>
+					
+				</section>
+			</div>
+			
+			<footer><p>Code Challenge for March, April and May 2020 
+				on <a href="https://howtocodewell.net">HowToCodeWell.net</a></p>
+			</footer>
+		</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+</body>
+</html>
